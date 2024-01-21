@@ -1,0 +1,131 @@
+.sidebar {
+  padding: 40px 20px 20px 20px;
+  background: #142D3B;
+  border-radius: 20px;
+  height: calc(100vh - 106px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 780px) {
+    display: none;
+  }
+
+  .laptop {
+    @media (max-width: 1360px) {
+      display: none;
+    }
+
+    @media (max-height: 800px) {
+      display: none;
+    }
+  } 
+  
+  .navigation {
+    position: relative;
+
+    &-title {
+      position: absolute;
+      color: #ADB4BD;
+      font-size: 14px;
+      margin-left: 20px;
+      top: -30px;
+      font-weight: 500;
+      line-height: 140%;
+    }
+    
+    ul {
+      padding: 0;
+      
+      li {
+        list-style: none;
+        
+        a {
+          display: flex;
+          align-items: center;
+          padding: 18px 20px;
+          color: #ADB4BD;
+          font-family: "TT Norms Pro";
+          font-weight: 400;
+          text-decoration: none;
+          line-height: 148%;
+          border-radius: 12px;
+
+          svg {
+            align-self: flex-start;
+          }
+          
+          span {
+            margin-left: 16px;
+          }
+
+          &:hover {
+            color: #F8F9FA;
+            background: #008277;
+
+            svg {
+              path {
+                fill: #F8F9FA;
+              }
+            }
+          }
+          
+          &.active {
+            color: #F8F9FA;
+            background: #008277;
+
+            svg {
+              path {
+                fill: #F8F9FA;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &s {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  
+  .top-navigation {
+    margin-top: 32px;
+
+  }
+  .bottom-navigation {
+    margin-top: 32px;
+  }
+
+  .hide-menu {
+    cursor: pointer;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    color: #ADB4BD;
+    font-weight: 400;
+    line-height: 140%;
+
+    @media (max-width: 1360px) {
+      margin-top: 0;
+
+      svg {
+        display: none;
+      }
+    }
+
+    @media (max-height: 800px) {
+      margin-top: 0;
+
+      svg {
+        display: none;
+      }
+    }
+    
+    span {
+      margin-left: 14px;
+    }
+  }
+}

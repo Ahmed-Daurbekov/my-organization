@@ -1,0 +1,96 @@
+.modalMenu {
+  padding: 10px 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  bottom: 0;
+  right: 0;
+  background: #00000082;
+  display: flex;
+
+  .modalMenu-wrap {
+    padding: 40px 20px 20px 20px;
+    background: #142D3B;
+    border-radius: 20px;
+    height: calc(100vh - 20px);
+
+    .modalMenu-close {
+      color: #ADB4BD;
+      font-size: 60px;
+      line-height: 35px;
+      cursor: pointer;
+    }
+
+    .navigation {
+      position: relative;
+      margin-top: 40px;
+  
+      &-title {
+        position: absolute;
+        color: #ADB4BD;
+        font-size: 14px;
+        margin-left: 20px;
+        top: -30px;
+        font-weight: 500;
+        line-height: 140%;
+      }
+      
+      ul {
+        padding: 0;
+        
+        li {
+          list-style: none;
+          
+          a {
+            display: flex;
+            align-items: center;
+            padding: 18px 20px;
+            color: #ADB4BD;
+            font-family: "TT Norms Pro";
+            font-weight: 400;
+            text-decoration: none;
+            line-height: 148%;
+            border-radius: 12px;
+  
+            svg {
+              align-self: flex-start;
+            }
+            
+            span {
+              margin-left: 16px;
+            }
+  
+            &:hover {
+              color: #F8F9FA;
+              background: #008277;
+  
+              svg {
+                path {
+                  fill: #F8F9FA;
+                }
+              }
+            }
+            
+            &.active {
+              color: #F8F9FA;
+              background: #008277;
+  
+              svg {
+                path {
+                  fill: #F8F9FA;
+                }
+              }
+            }
+          }
+        }
+      }
+  
+      &s {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+label {
+  margin-top: 8px;
+  display: block;
+  position: relative;
+
+  svg {
+    position: absolute;
+    right: 24px;
+    top: 19px;
+
+    &.active {
+      transform: rotate(180deg);
+    }
+  }
+
+  .select {
+    color: #ADB4BD;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 148%;
+    padding: 15px 24px 17px 24px;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid #E7E7F3;
+    background: #FEFEFE;
+    width: 100%;
+    font-family: "TT Norms Pro";
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    
+    option {
+      color: black;
+    }
+
+  }
+}
